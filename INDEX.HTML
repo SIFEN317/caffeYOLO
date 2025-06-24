@@ -1,0 +1,174 @@
+<!--  CAFE YOLO – One‑Page Landing Demo  -->
+<!--  Built with TailwindCSS CDN + AOS for scroll animations           -->
+<!--  Replace text, images & colors to match any small business.      -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café YOLO</title>
+
+    <!--  Tailwind CSS CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  Animate On Scroll (AOS)  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      /* Custom gradient for the hero background */
+      .gradient-bg {
+        background: linear-gradient(135deg, #BFA2DB 0%, #A18CD1 100%);
+      }
+      /* Custom scrollbar for desktops */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f2f2f2;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #BFA2DB;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 bg-white antialiased leading-relaxed">
+    <!-- ================= HERO ================= -->
+    <header class="gradient-bg text-white">
+      <div
+        class="max-w-5xl mx-auto px-4 py-24 flex flex-col items-center text-center"
+        data-aos="fade-down"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
+          Café YOLO
+        </h1>
+        <p class="text-lg md:text-2xl mt-4 mb-8">
+          Your daily dose of happiness ☕
+        </p>
+        <a
+          href="tel:+251911123456"
+          class="bg-white text-gray-800 font-semibold px-8 py-3 rounded-full shadow-lg transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-out hover:bg-[#EAD6EE]"
+          >Call Now</a
+        >
+      </div>
+    </header>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="py-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2
+          class="text-3xl font-bold text-center mb-12"
+          data-aos="fade-up"
+        >
+          Our Services
+        </h2>
+
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="100"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/100/BFA2DB/coffee-to-go--v1.png"
+              alt="Coffee icon"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">
+              Specialty Coffee
+            </h3>
+            <p class="text-center text-sm">
+              Freshly brewed Ethiopian beans, served hot or iced.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="200"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/100/BFA2DB/cake.png"
+              alt="Cake icon"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Pastries & Cakes</h3>
+            <p class="text-center text-sm">
+              Baked fresh daily using local ingredients.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-md" data-aos="zoom-in" data-aos-delay="300"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/100/BFA2DB/wifi.png"
+              alt="Wi-Fi icon"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-center mb-2">Free Wi‑Fi</h3>
+            <p class="text-center text-sm">
+              Comfortable seats and fast internet for work or chill.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="py-20 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Gallery
+        </h2>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+            alt="Café interior"
+            class="rounded-xl shadow-lg w-full h-64 object-cover"
+            data-aos="flip-left"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80"
+            alt="Latte art"
+            class="rounded-xl shadow-lg w-full h-64 object-cover"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80"
+            alt="Cake slice"
+            class="rounded-xl shadow-lg w-full h-64 object-cover"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-20">
+      <div class="max-w-2xl mx-auto px-4 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <p class="mb-2 text-lg font-medium">📞 +251 911 000 000</p>
+        <p class="mb-2 text-lg font-medium">📍 Piassa, Addis Ababa</p>
+        <a
+          href="https://t.me/"CafeYOLO"
+          class="text-white bg-gradient-to-r from-pink-300 to-purple-300 px-6 py-3 rounded-full font-semibold inline-block hover:opacity-90 transition"
+          >Message us on Telegram</a
+        >
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-6 text-sm">
+      © 2025 Café YOLO. Built with ❤️ by Sifen Web Design.
+    </footer>
+
+    <!--  AOS init  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // animation happens only once
+        duration: 800, // animation duration in ms
+      });
+    </script>
+  </body>
+</html>
